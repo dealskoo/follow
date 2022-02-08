@@ -9,6 +9,7 @@ paths:
 
 factory:
   path: database/factories
+  namespace: Database\Factories\Dealskoo\Follow\Models
 
 migration:
   path: database/migrations
