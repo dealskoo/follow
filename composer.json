@@ -1,0 +1,57 @@
+{
+    "name": "dealskoo/follow",
+    "description": "Dealskoo Follow",
+    "homepage": "https://www.dealskoo.com",
+    "support": {
+        "issues": "https://github.com/dealskoo/follow/issues",
+        "source": "https://github.com/dealskoo/follow"
+    },
+    "keywords": [
+        "Laravel",
+        "Dealskoo Follow",
+        "Dealskoo"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Dealskoo\\Follow\\": "src/",
+            "Database\\Factories\\Dealskoo\\Follow\\Models\\": "database/factories/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dealskoo\\Follow\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "hadi",
+            "email": "hadi@dealskoo.com",
+            "homepage": "https://www.dealskoo.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "laravel/framework": ">=7.20"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.23",
+        "orchestra/canvas": "^6.10",
+        "phpunit/phpunit": "^9.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dealskoo\\Follow\\Providers\\FollowServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

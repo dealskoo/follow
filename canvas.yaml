@@ -1,0 +1,27 @@
+preset: package
+
+namespace: Dealskoo\Follow
+user-auth-provider: App\User
+
+paths:
+  src: src
+  resource: resources
+
+factory:
+  path: database/factories
+
+migration:
+  path: database/migrations
+  prefix: ''
+
+console:
+  namespace: Dealskoo\Follow\Console
+
+model:
+  namespace: Dealskoo\Follow\Models
+
+provider:
+  namespace: Dealskoo\Follow\Providers
+
+testing:
+  namespace: Dealskoo\Follow\Tests
