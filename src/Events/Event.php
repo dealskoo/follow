@@ -2,13 +2,13 @@
 
 namespace Dealskoo\Follow\Events;
 
-use Illuminate\Database\Eloquent\Model;
+use Dealskoo\Follow\Models\Follow;
 
 class Event
 {
     public $follow;
 
-    public function __construct(Model $follow)
+    public function __construct(Follow $follow)
     {
         $this->follow = $follow;
     }
