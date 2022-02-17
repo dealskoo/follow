@@ -10,6 +10,7 @@ use Illuminate\Queue\SerializesModels;
 class Event
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
+
     public $follow;
 
     public function __construct(Follow $follow)
