@@ -5,12 +5,10 @@ namespace Dealskoo\Follow\Models;
 use Dealskoo\Follow\Events\Followed;
 use Dealskoo\Follow\Events\Unfollowed;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Follow extends Model
 {
-    use HasFactory;
 
     protected $dispatchesEvents = [
         'created' => Followed::class,
