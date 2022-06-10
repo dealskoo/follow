@@ -87,6 +87,7 @@ class FollowTest extends TestCase
         $user1->follow($post);
         $user2->follow($post);
         $this->assertCount(2, $post->follows);
+        $this->assertCount(2, $post->followers);
 
         $this->assertSame($user1->name, $post->followers[0]['name']);
         $this->assertSame($user2->name, $post->followers[1]['name']);
